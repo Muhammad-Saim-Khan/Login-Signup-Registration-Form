@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="./sign in/sign in.html">Sign in</a>
+      <a href="./sign up/sign up.html">Sign up</a>
+      <a href="./register/register.html">Register</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <center>
+      <div class="logo">
+        <a href="./sign in/sign in.html">
+          <img src="./images/SIGN IN.jpg" alt="sign in"
+        /></a>
+        <a href="./sign up/sign up.html">
+          <img src="./images/SIGN UP.jpg" alt="sign up"
+        /></a>
+        <a href="./register/register.html">
+          <img src="./images/REGISTER.jpg" alt="register"
+        /></a>
+      </div>
+    </center>
+  </body>
+</html>

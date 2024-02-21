@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(../style.css);
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #dddddf;
+  /* display: flex */
+  align-items: center;
+  min-height: 100vh;
+}
+.main {
+  margin: 20px 0;
+  /* border: 2px solid black; */
+  width: 90%;
+  /* height: 800px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+
+  max-width: 1000px;
+}
+.left {
+  /* border: 2px solid blue;
+  
+  /* height: 700px; */
+  /* background-image: linear-gradient( */
+  /* 295deg,
+      rgba(58, 0, 174, 0.5) 50%,
+      rgba(11, 0, 9, 0.5) 50%
+    ), */
+  /* url(./images/saimkhan.jpeg); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: 46% center; */
+  background: rgb(255, 71, 69);
+  background: linear-gradient(rgba(255, 71, 69, 1), rgba(254, 74, 51, 1));
+  font-family: "Times New Roman", Times, serif;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: end;
+  padding: 30px;
+}
+.right {
+  /* border: 2px solid red; */
+  width: 50%;
+  /* height: 700px; */
+  background-color: white;
+  overflow: auto;
+}
+.left > h1 {
+  margin-top: 100px;
+  color: white;
+  /* position: absolute; */
+  /* top: 400px;
+    left: 300px; */
+  /* margin-top: auto; */
+  /* margin-left: 30px; */
+  font-size: 50px;
+  /* text-shadow: 2px 2px 10px white; */
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 50px;
+
+  text-align: center;
+}
+.signin {
+  background: none;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-weight: 900;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  margin-bottom: 140px;
+}
+.left > h3 {
+  color: white;
+  font-weight: 600;
+
+  text-align: center;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* top: 450px; */
+  /* margin-left: 30px; */
+  /* text-shadow: 2px 2px 10px white; */
+  /* left: 300px; */
+}
+.icons {
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: x-large;
+}
+.icons i {
+  color: black;
+  border-radius: 50%;
+  border: 1px solid rgb(120, 120, 120);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: none;
+  transition: all 1s ease-in;
+}
+.icons i:hover {
+  background-color: yellow;
+  color: black;
+  min-width: none;
+  transform: scale(1) rotate(360deg);
+}
+.one > a {
+  text-decoration: none;
+  color: black;
+  transition: all 1s;
+  min-width: none;
+}
+.right > p {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.one {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: none;
+  color: black;
+}
+.right > h1 {
+  margin-top: 50px;
+  /* margin-left: 30px; */
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  /* text-shadow: 2px 2px 5px gray; */
+}
+.form {
+  /* padding: 60px; */
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 100%;
+  padding-top: 20px;
+  /* border: 2px solid green; */
+}
+input {
+  width: 100%;
+  background-color: #eeeeee;
+  border: none;
+  height: 50px;
+  padding-left: 20px;
+  margin-top: 5px;
+  font-size: large;
+  font-weight: 600;
+}
+.form > div {
+  padding: 5px;
+}
+
+.box {
+  width: 20px;
+}
+p {
+  margin-top: 2px;
+}
+a {
+  color: blue;
+}
+button {
+  background-color: #ff4a2b;
+  width: 170px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 25px;
+  color: white;
+  font-size: medium;
+  font-weight: 800;
+  border: 2px solid black;
+  margin-bottom: 30px;
+  border: none;
+}
+input:focus {
+  color: darkblue;
+  background-color: lightblue;
+  font-weight: 600;
+  border: none;
+}
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .right,
+  .left {
+    height: 100vh;
+    width: 100%;
+  }
+  .form {
+    padding: 0%;
+  }
+  input {
+    width: 100%;
+  }
+}
